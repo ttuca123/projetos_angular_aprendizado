@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Reference Angular Material stylesheet -->
+<link rel="stylesheet" href="https://cdn.gitcdn.link/cdn/angular/bowermaterial/
+v1.0.8/angular-material.css">
+<title>Hello World</title>
+</head>
+<body ng-app="sampleApp" layout="column">
+<!-- Bootstrap Angular Material Application. We create a module with
+ngMaterial as a dependency. Learn more about an AngularJS module in a
+later section of the chapter -->
+<script>
+angular.module("sampleApp", ["ngMaterial"]);
+</script>
+<!-- Create a title: Here we are creating a simple toolbar. We will get
+into details of various controls in Angular Material during course of
+this book. For the moment, understand that it is an Angular Material
+element for creating a title and a toolbar -->
+<md-toolbar layout-padding>
+<div class="md-toolbar-tools">
+<h2>Welcome to Angular Material</h2>
+</div>
+</md-toolbar>
+
+
+<!-- Reference needed scripts. See scripts section above for details on
+each script-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/
+angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/
+angularjs/1.4.8/ angular-animate .min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/
+angularjs/1.4.8/ angular-aria .min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/
+angularjs/1.4.8/ angular-messages .min.js"></script>
+ <!—Angular Messages
+is optional for this sample -->
+<script src="https://cdn.gitcdn.link/cdn/angular/bower-material/
+v1.0.8/ angular-material.js "></script>
+</body>
+</html>
