@@ -8,12 +8,11 @@
 		<script src="lib/angular/angular-animate.min.js"></script>
 		<script src="lib/angular/angular-material.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-		
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">	
+		<link rel="stylesheet" href="lib/angular/angular-material.css">	
 
-		
-			<script>
-			angular.module("sampleApp");
-			</script>
+
+
 		
 		
 		<title>Hello World</title>
@@ -21,17 +20,16 @@
 
 	</head>
 
-	<body ng-app="sampleApp" layout="column">
-		
-		
+	<body ng-app="sampleApp" layout="column">			
+			
+			<script>
+			angular.module("sampleApp", ["ngMaterial"]);
+		</script>
+
 		<md-toolbar layout-padding>
-		<div class="md-toolbar-tools">
-		<h2>Welcome to Angular Material</h2>
-		</div>
-		</md-toolbar>
-
-		
-
-		
+			<div class="md-toolbar-tools">
+				<h2>Welcome to Angular Material</h2>
+			</div>
+		</md-toolbar>		
 	</body>
 </html>
