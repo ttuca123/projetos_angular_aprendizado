@@ -28,7 +28,7 @@
 
 		<md-toolbar layout-padding>
 			<div class="md-toolbar-tools">
-				<h2>Welcome to Angular Material</h2>
+				<h2>Bem Vindo ao Angular Material</h2>
 			</div>
 		</md-toolbar>		
 	</body>

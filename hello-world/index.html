@@ -30,6 +30,16 @@
 			<div class="md-toolbar-tools">
 				<h2>Bem Vindo ao Angular Material</h2>
 			</div>
-		</md-toolbar>		
+		</md-toolbar>	
+
+		<div ng-app>
+ 			<span ng-init="aModelObject='Valor Inicial'"></span>
+			<input type="text" ng-model="aModelObject">
+			<div>
+			<strong>{{aModelObject}}</strong>
+			</div>		
+
+		</div>
+	
 	</body>
 </html>
