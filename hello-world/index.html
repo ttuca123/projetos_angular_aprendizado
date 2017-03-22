@@ -11,8 +11,6 @@
 		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">	
 		<link rel="stylesheet" href="lib/angular/angular-material.css">	
 
-
-
 		
 		
 		<title>Hello World</title>
@@ -23,7 +21,21 @@
 	<body ng-app="sampleApp" layout="column">			
 			
 			<script>
-			angular.module("sampleApp", ["ngMaterial"]);
+			var myApp = angular.module("sampleApp", ["ngMaterial"]);		
+			
+
+			myApp.controller("firstController", function($scope){
+
+				$scope.title = "Selecione uma cidade";
+				$scope.cities = ["San Francisco", "New York"];
+			});
+
+			myApp.controller("secondController", function($scope){
+
+				$scope.title = "Selecione uma cidade 2";
+				$scope.cities = ["Fortaleza", "Caucaia"];
+			});
+
 		</script>
 
 		<md-toolbar layout-padding>
@@ -32,11 +44,25 @@
 			</div>
 		</md-toolbar>	
 
-		<div ng-app>
+		<div>
  			<span ng-init="aModelObject='Valor Inicial'"></span>
 			<input type="text" ng-model="aModelObject">
 			<div>
 			<strong>{{aModelObject}}</strong>
+			<div ng-controller="firstController">
+				<h2>{{title}}</h2>
+				<select name="dpCities" ng-model="sampleApp" 
+				ng-options="city for city in cities"></select>
+
+			</div>
+			<div ng-controller="secondController">
+				<h2>{{title}}</h2>
+				<select name="dpCities" ng-model="sampleApp" 
+				ng-options="city for city in cities"></select>
+
+			</div>
+
+
 			</div>		
 
 		</div>
