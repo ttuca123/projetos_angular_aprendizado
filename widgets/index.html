@@ -22,17 +22,30 @@
 
 	<body ng-app="firstApplication" ng-cloak>
 
-   
-      <div ng-controller="bottomSheetController as ctrl" layout="column" ng-cloak>
-         <md-content class="md-padding">
-            <form ng-submit="$event.preventDefault()">
-               <md-button class="md-raised md-primary"  ng-click="openBottomSheet()">
-                  Abrir Botao
-               </md-button>
-            </form>
+	<div align="center">
+		<md-toolbar>Meus Widgets </md-toolbar>
+			<md-tabs md-align-tabs="top" md-border-bottom="true" >
+				
+				
+				<md-tab label="tab 1">
+				
+				tab1					
+				<md-tooltip>Meu Tool Tip </md-tooltip>
+				
+				</md-tab >
 
-         </md-content>
-            
-      </div>
+				
+				<md-tab>
+				tab2
+				</md-tab>
+
+				<md-tab>
+				tab3
+				</md-tab>
+
+
+			</md-tabs>
+	   </div>
+    
    </body>
 </html>
