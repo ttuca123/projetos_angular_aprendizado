@@ -1,0 +1,36 @@
+
+<html >
+	<head>
+		
+		<script src="lib/angular/angular.js"></script>
+		<script src="lib/angular/angular-aria.min.js"></script>
+
+		<script src="lib/angular/angular-animate.min.js"></script>
+		<script src="lib/angular/angular-material.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="lib/angular/modulo.js"></script>
+
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">	
+		<link rel="stylesheet" href="lib/angular/angular-material.css">	
+
+		
+		
+		<title>Material Bottom</title>
+
+
+	</head>
+
+	<body ng-app="firstApplication" ng-cloak>
+      <div ng-controller="bottomSheetController as ctrl" layout="column" ng-cloak>
+         <md-content class="md-padding">
+            <form ng-submit="$event.preventDefault()">
+               <md-button class="md-raised md-primary" ng-click="openBottomSheet()">
+                  Abrir Botao
+               </md-button>
+            </form>
+
+         </md-content>
+            
+      </div>
+   </body>
+</html>
